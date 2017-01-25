@@ -1,0 +1,98 @@
+/*公共属性*/
+
+label{font-size:1em;}
+header,section,footer,aside,nav,main,article,figure{display:block;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike,sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{
+	display: block;
+}
+body {
+	line-height: 1.2;
+	word-wrap:break-word;
+	background:#fff;
+	margin:0 auto;
+	height:100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body, button, input, select, textarea {
+	font: 12px SimSun, Helvetica, sans-serif;
+}
+
+/**clear webkit adjust**/
+body, table, td, div, p{
+	word-wrap:break-word;
+	-webkit-text-size-adjust:none;
+}
+/*使用无衬线字体*/
+body {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+/*设置全局的CSS样式，避免图中的长按弹出菜单与选中文本的行为。*/
+a, img {
+    -webkit-touch-callout: none; /* 禁止长按链接与图片弹出菜单 */
+}
+html, body {
+    -webkit-user-select: none;   /* 禁止选中文本（如无文本选中需求，此为必选项） */
+    user-select: none;
+}
+/*重置*/
+html.body{font-family:"兰亭细黑";font-size:62.5%;}
+img{display:block;border:none;}
+a{text-decoration:none;cursor:pointer}
+ul,li,p,dl,dt{margin:0;padding:0}
+li{list-style:none;}
+/*透明度*/
+.opacity{
+ background: #000; 	
+ filter:alpha(opacity=50);       /* IE */
+ -moz-opacity:0.5;              /* 老版Mozilla */
+ -khtml-opacity:0.5;              /* 老版Safari */
+ opacity: 0.5;
+    /* 支持opacity的浏览器*/
+ }
+ .opacity9{
+ background: #ef9406;  
+ filter:alpha(opacity=90);       /* IE */
+ -moz-opacity:0.9;              /* 老版Mozilla */
+ -khtml-opacity:0.9;              /* 老版Safari */
+ opacity: 0.9;
+    /* 支持opacity的浏览器*/
+ }
+/*按钮的重置*/
+button{-webkit-appearance:none;::-webkit-input-placeholder{color:#999;}
+input[type="text"],input[type="password"]{-webkit-appearance:none;appearance:none;outline:none;-webkit-tap-highlight-color:rgba(0,0,0,0);border-radius:0;}}
